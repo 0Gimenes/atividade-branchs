@@ -6,6 +6,29 @@
     <title>atividade-branchs</title>
 </head>
 <body>
+    <h1 style="text-align: center;">Atividade Branchs</h1>
+    <div>
+        <input type="text" id="resultado">
+    <button onclick="adc('1')">1</button>
+    <button onclick="adc('2')">2</button>
+    <button onclick="adc('3')">3</button>
+    <button onclick="adc('4')">4</button>
+    <button onclick="adc('5')">5</button>
+    <br>
+    <button onclick="adc('-')">-</button>
+    <button onclick="adc('+')">+</button>
+    <button onclick="calk('=')">=</button>
 
+    </div>
+    <script>
+        function adc(valor) {
+            document.getElementById("resultado").value += valor;
+        }
+        function calk(){
+            const resultado = eval(document.getElementById('resultado').value);
+            document.getElementById('resultado').value = resultado
+         }
+
+    </script>
 </body>
 </html>
